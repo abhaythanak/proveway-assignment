@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .line {
+    width: 30%;
+    height: 0.8px;
+    background-color: black;
+  }
+  
+  .line-container h2 {
+    color: #ff6b82;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .box {
+    position: relative;
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    margin-bottom: 30px;
+  }
+  
+  .box:hover {
+    border: 1px solid #ff6b82;
+    transform: scale(1.03);
+  }
+  
+  .TAG-Div {
+    position: absolute;
+    right: 10px;
+    top: -9px;
+    background-color: #ff6b82;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 7px;
+  }
+  
+  .box-content1 {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .active .box-content1 {
+    display: block;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .sub-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .checkbox-container input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    background-color: white;
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+  
+  /* When checkbox is checked */
+  .checkbox-container input:checked {
+    background-color: red;
+    padding: 2px;
+    border: 2px solid red;
+  }
+  
+  .box-content h3,
+  .box-content p {
+    text-align: center;
+    margin: 2px 0;
+    line-height: 1.2;
+  }
+  
+  .h3-span {
+    padding: 3px 5px;
+    font-size: medium;
+    background-color: #ff6b82;
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 100;
+    color: white;
+  }
+  
+  .text-hight-div p {
+    text-decoration: line-through;
+    color: rgb(179, 174, 174);
+    font-weight: 100;
+  }
+  
+  .text-hight-div h3,
+  .text-hight-div p {
+    margin: 2px 0;
+    line-height: 1.2;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-weight: 100;
+    flex-wrap: wrap;
+  }
+  
+  select {
+    padding: 8px 20px;
+    margin: 5px;
+  }
+  
+  .total-charge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .total-charge h3 {
+    color: #ff6b82;
+  }
+  
+  button {
+    width: 100%;
+    height: 8vh;
+    background-color: #ff6b82;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button span {
+    font-size: xx-large;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    .line {
+      width: 40%;
+    }
+  
+    .line-container h2 {
+      font-size: 1.3rem;
+    }
+  
+    .box {
+      padding: 12px;
+    }
+  
+    .sub-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .checkbox-container {
+      gap: 5px;
+    }
+  
+    .option {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    button {
+      height: 7vh;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .line {
+      width: 50%;
+    }
+  
+    .line-container h2 {
+      font-size: 1.1rem;
+    }
+  
+    .box {
+      padding: 10px;
+    }
+  
+    .TAG-Div {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  
+    .checkbox-container input {
+      width: 18px;
+      height: 18px;
+    }
+  
+    button {
+      font-size: medium;
+      height: 6vh;
+    }
+  }
+  
